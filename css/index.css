@@ -1,27 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@1,400;1,500;1,700&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --basic-color: rgb(38, 30, 28);
-    --decoration-color: #C8693A;
-    --text-color: #FFFFFF;
-    --secondary-text-color: #898082;
-    --top-container-color: rgba(0, 0, 0, 0.5);
-    --footer-background-color: #1b1613;
-    --title-font: 'Prata', serif;
-    --paragraph-font: 'Rubik', sans-serif;
-    --decoration-font: 'Great Vibes';
-    scroll-behavior: smooth;
+  --basic-color: rgb(38, 30, 28);
+  --decoration-color: #c8693a;
+  --text-color: #ffffff;
+  --secondary-text-color: #898082;
+  --top-container-color: rgba(0, 0, 0, 0.5);
+  --footer-background-color: #1b1613;
+  --title-font: "Prata", serif;
+  --paragraph-font: "Rubik", sans-serif;
+  --decoration-font: "Great Vibes";
+  scroll-behavior: smooth;
 }
-
+body {
+  background-color: var(--basic-color);
+}
 .buttons-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -29,51 +31,51 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: var(--title-font);
-    color: var(--text-color);
+  font-family: var(--title-font);
+  color: var(--text-color);
 }
 
 p {
-    font-family: var(--paragraph-font);
+  font-family: var(--paragraph-font);
 }
 
 .container {
-    max-width: 1366px;
-    margin: auto; 
+  max-width: 1366px;
+  margin: auto;
 }
 
 .textdecor {
-    color: var(--decoration-color);
-    font-family: var(--decoration-font);
-    font-size: 21px;
+  color: var(--decoration-color);
+  font-family: var(--decoration-font);
+  font-size: 21px;
 }
 
 .undertitle-content {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .hidden-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /*button go to top*/
 #myBtn {
-    display: none;
-    position: fixed; 
-    bottom: 20px; 
-    right: 60px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: var(--decoration-color); 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 50px; 
-    font-size: 18px; 
-    opacity: .5;
-  }
-  
-  #myBtn:hover {
-    opacity: .8;
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--decoration-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#myBtn:hover {
+  opacity: 0.8;
+}
